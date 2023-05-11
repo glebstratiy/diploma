@@ -1,35 +1,36 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/"><img src="/icons/pngwing.com.png" alt="" style="width: 70px; height: 70px; margin-left: 20px; margin-right: 20px"></a>
+  {{!-- <a href="/"><span>Клиника <br>Мезенцева</span></a> --}}
+  <a class="navbar-brand" href="/"><img src="https://mezentsev-clinic.com/img/24.svg" alt="" style="width: 240px; height: 70px; margin-left: 20px; margin-right: 20px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: space-between;">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Главная</a>
+        <a class="nav-link" href="/">Головна</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/doctors">Врачи</a>
+        <a class="nav-link" href="/doctors">Лікарі</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/services">Услуги</a>
+        <a class="nav-link" href="/services">Послуги</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/about">О клинике</a>
+        <a class="nav-link" href="/about">Про клініку</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/contacts">Контакты</a>
+        <a class="nav-link" href="/contacts">Контакти</a>
       </li>
     </ul>
      <div style="display: flex; gap: 10px; padding: 10px;">
      {{#if isLoggedIn}}
-     <a class="btn btn-primary btn-sm " href="/auth/doLogout" role="button" style="margin-top: 10px; font-size: 24px;">Выйти</a>
+     <a class="btn btn-primary btn-sm " href="/auth/doLogout" role="button" style="margin-top: 10px; font-size: 24px;">Вийти</a>
      {{else}}
-     <a class="btn btn-primary btn-sm " href="/auth/login" role="button" style="margin-top: 10px; font-size: 24px;">Вход</a>
+     <a class="btn btn-primary btn-sm " href="/auth/login" role="button" style="margin-top: 10px; font-size: 24px;">Вхід</a>
      {{/if}}
-     <a class="btn btn-primary btn-sm " href="/auth/registration" role="button" style="margin-top: 10px; font-size: 24px;">Регистрация</a>
-     <a class="btn btn-primary btn-sm " href="/appointment" role="button" style="font-size: 24px; margin-top: 10px">Записаться</a>
-     <a class="btn btn-primary btn-sm " href="/account" role="button" style="margin-top: 10px; font-size: 24px;">Личный кабинет</a>
+     <a class="btn btn-primary btn-sm " href="/auth/registration" role="button" style="margin-top: 10px; font-size: 24px;">Реєстрація</a>
+     <a class="btn btn-primary btn-sm " href="/appointment" role="button" style="font-size: 24px; margin-top: 10px">Запис</a>
+     <a class="btn btn-primary btn-sm " href="/account" role="button" style="margin-top: 10px; font-size: 24px;">Особистий кабінет</a>
      </div>
   </div>
 </nav>
