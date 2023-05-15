@@ -11740,4 +11740,10 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+@media (max-width: 1000px){
+  .adap {
+    flex-direction: column;
+  }
+}
 /*# sourceMappingURL=bootstrap.min.css.map */
