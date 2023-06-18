@@ -73,7 +73,7 @@ exports.doLogout = async(req, res) => {
 exports.doRegister = async(req, res) => {
     try {
         const { username, password, email } = req.body;
-        const candidate = await User.findOne({username})
+        const candidate = await User.findOne({username});
         if(candidate){
             return res.status(400).send('Пользователь с таким именем уже существует!')
         }

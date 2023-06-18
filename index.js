@@ -11,7 +11,7 @@ const doctorRouter = require('./routes/doctors.route');
 const appointmentRouter = require('./routes/appointment.route');
 const authRouter = require('./routes/auth.route');
 
-const app = express()
+const app = express();
 const PORT = 3001;
 
 //Reusable navbar
