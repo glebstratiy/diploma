@@ -70,7 +70,7 @@ app.post('/deleteAppointment', async (req, res) =>{
   res.redirect('/account')  
 })
 
-mongoose.connect("mongodb+srv://gstratiyj:goliylox123@cluster0.zvp2y32.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://gstratiyj:goliylox123@cluster0.zvp2y32.mongodb.net/", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB"))
   .catch(err => console.log(err));
 
